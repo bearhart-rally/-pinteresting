@@ -1,8 +1,20 @@
+@import url(http://fonts.googleapis.com/css?family=Bubbler+One);
+
 $body-bg:  #7f8c8d;
+$navbar-height:  45px;
+$font-family-sans-serif: 'Bubbler One', Helvetica, Arial, sans-serif;
 $navbar-inverse-bg:  #f39c12;
 $navbar-inverse-link-color:  white;
-$brand-primary:  #bdc3c7;
+$brand-danger:  #e67e22;
 $jumbotron-bg:  #ecf0f1;
-$font-family-sans-serif:  arial; 
+ 
 
 @import "bootstrap";
+
+.center {
+	text-align: center;
+}
+
+.navbar-brand {
+	font-weight: bold;
+}
