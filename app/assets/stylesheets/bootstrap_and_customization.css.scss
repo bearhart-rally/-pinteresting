@@ -7,7 +7,7 @@ $navbar-inverse-bg:  #f39c12;
 $navbar-inverse-link-color:  white;
 $brand-danger:  #e67e22;
 $jumbotron-bg:  #ecf0f1;
- 
+
 
 @import "bootstrap";
 
@@ -17,4 +17,8 @@ $jumbotron-bg:  #ecf0f1;
 
 .navbar-brand {
 	font-weight: bold;
+
+.panel-heading:hover {
+	background-color: #e67e22;
+}	
 }
