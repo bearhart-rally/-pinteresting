@@ -9,6 +9,7 @@
   <thead>
     <tr>
       <th>Description</th>
+      <th>User_id</th>
       <th></th>
       <th></th>
       <th></th>
@@ -19,6 +20,7 @@
     <% @pins.each do |pin| %>
       <tr>
         <td><%= pin.description %></td>
+        <td><%= pin.user_id %></td>
         <td><%= link_to 'Show', pin, class: "btn btn-danger" %></td>
         <td><%= link_to 'Edit', edit_pin_path(pin), class: "btn btn-danger" %></td>
         <td><%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
