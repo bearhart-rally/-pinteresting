@@ -7,7 +7,8 @@
       <div class="panel-body">
       <p><%= pin.description %></p>
       <strong><%= pin.user.name if pin.user %></strong>
-      <% if pin.user == current_user %>
+
+      <% if current_user && pin.user == current_user %>
         <div class="actions">
           <%= link_to raw('<i class="icon ion-edit"></i> Edit'), edit_pin_path(pin), class: "btn btn-danger" %>
           <%= link_to raw('<i class="icon ion-android-trash"></i> Destroy'), pin, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
